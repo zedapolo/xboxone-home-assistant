@@ -75,9 +75,9 @@ WantedBy=multi-user.target
 
 In order to use some of the features listed above, you'll need to sign into Xbox Live.
 
-0. Surf to your Hass.io instance and use port `5557`
+1. Surf to your Hass.io instance and use port `5557`
     (e.g. `http://hassio.local:5557`).
-0. Authenticate by going to [/auth/oauth](http://hassio.local:5557/auth/oauth)
+1. Authenticate by going to [/auth/oauth](http://hassio.local:5557/auth/oauth)
     and following the directions.
 
 ## Home Assistant Configuration
