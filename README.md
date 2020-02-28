@@ -20,5 +20,5 @@ Check out: [Addon README](hassio/README.md).
 
 ## Credits
 
-- Jason Hunter (@hunterjm) - Creator of custom component & Hass.io addon
-- Eric Leblanc (@ericleb010) and @jmhill1287 - Maintaining & giving user support
+- Jason Hunter ([@hunterjm](https://github.com/hunterjm)) - Creator of custom component & Hass.io addon
+- Eric Leblanc ([@ericleb010](https://github.com/ericleb010)) and [@jmhill1287](https://github.com/jmhill1287) - Maintaining & giving user support
