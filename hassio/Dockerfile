@@ -3,8 +3,6 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-# Copy data for add-on
-COPY run.sh xboxone.py manifest.json __init__.py /
 RUN chmod a+x /run.sh
 
 # Install requirements for add-on

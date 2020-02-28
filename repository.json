@@ -1,5 +1,5 @@
 {
-    "name": "Hass.io Add-ons - Jason Hunter",
-    "url": "https://github.com/hunterjm/hassio-addons",
-    "maintainer": "Jason Hunter <hunterjm@gmail.com>"
+    "name": "Hass.io Xbox One Add-on - OpenXbox",
+    "url": "https://github.com/OpenXbox/xboxone-home-assistant",
+    "maintainer": "OpenXbox <pleasedont@mailme.com>"
 }

@@ -1,0 +1,6 @@
+{
+  "name": "Xbox One - smartglass media player",
+  "domains": ["media_player"],
+  "homeassistant": "0.99.0",
+  "persistent_directory": ".keep"
+}
