@@ -1,6 +1,11 @@
 os: linux
 language: shell
 env:
+- ARCH="--armhf"
+- ARCH="--armv7"
+- ARCH="--aarch64"
+- ARCH="--amd64"
+- ARCH="--i386"
   global:
   - VERSION_BUILDER="2.0"
   - ADDON="hassio"
@@ -20,5 +25,5 @@ script: |
         -v /run/docker.sock:/run/docker.sock:rw \
         -v $(pwd):/data:ro \
         homeassistant/amd64-builder:$VERSION_BUILDER \
-        --addon --all -t /data/$ADDON \
+        --addon $ARCH -t /data/$ADDON \
         --docker-hub $DOCKER_USERNAME --docker-hub-check
