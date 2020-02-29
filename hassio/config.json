@@ -3,14 +3,19 @@
   "version": "2.0.2",
   "slug": "xboxone",
   "description": "Control your Xbox One from your Home Assistant device - to be used in combination with xboxone.media_player component",
-  "homeassistant": "0.99.0",
-  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "url": "https://github.com/OpenXbox/xboxone-home-assistant",
-  "startup": "before",
+  "startup": "services",
   "boot": "auto",
-  "image": "OpenXbox/hassio-{arch}-xboxone",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
   "host_network": true,
-  "map": ["config:rw"],
-  "options": {},
-  "schema": {}
+  "map": [
+    "config:rw"
+  ],
+  "image": "OpenXbox/hassio-{arch}-xboxone"
 }

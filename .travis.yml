@@ -1,0 +1,28 @@
+os: linux
+language: shell
+
+env:
+- VERSION_BUILDER="2.0" ADDON="hassio"
+
+services:
+  - docker
+
+before_install: |
+  if [ -z ${DOCKER_USER} ] || [ -z ${DOCKER_PWD} ]
+  then
+    echo "No docker credentials were provided in Travis CI"
+    exit 1
+  fi
+
+before_script:
+  - docker login -u $DOCKER_USER -p $DOCKER_PWD
+  - docker pull homeassistant/amd64-builder:$VERSION_BUILDER
+
+script: |
+  docker run --rm --privileged \
+        -v ~/.docker:/root/.docker \
+        -v /run/docker.sock:/run/docker.sock:rw \
+        -v $(pwd):/data:ro \
+        homeassistant/amd64-builder:$VERSION_BUILDER \
+        --addon --all -t /data/$ADDON \
+        --docker-hub $DOCKER_USER --docker-hub-check
