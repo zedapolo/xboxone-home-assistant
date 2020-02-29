@@ -2,7 +2,7 @@
 
 ## Dependencies
 
-Requires running [Xbox One Smartglass REST server](https://github.com/OpenXbox/xbox-smartglass-rest-python).
+Requires running [Xbox One Smartglass REST server](https://github.com/OpenXbox/xbox-smartglass-core-python).
 
 HASS.io users can use the official addon: [Check it out](https://github.com/OpenXbox/xboxone-home-assistant)
 
