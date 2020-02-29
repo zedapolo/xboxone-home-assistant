@@ -10,9 +10,6 @@ env:
 services:
 - docker
 
-before_install:
-  - if [ -z ${DOCKER_USER} ] || [ -z ${DOCKER_PWD} ]; then echo "No docker credentials available"; exit 1; fi
-
 before_script:
 - docker login -u $DOCKER_USER -p $DOCKER_PWD
 - docker pull homeassistant/amd64-builder:$VERSION_BUILDER
