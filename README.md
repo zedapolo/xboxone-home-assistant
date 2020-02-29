@@ -9,7 +9,11 @@ use with HASS.io.
 
 ## Custom component
 
-Install via [HACS](https://hacs.xyz/docs/publish/start) or manually: see [Custom component info](info.md).
+* Install via [HACS](https://hacs.xyz/docs/publish/start) or manually: see [Custom component info](info.md).
+
+The component currently still requires an installed/running daemon of **Xbox Smartglass REST server**.
+
+See [xbox-smartglass-core](https://github.com/OpenXbox/xbox-smartglass-core-python) for info about that.
 
 ## Hass.io addon
 
