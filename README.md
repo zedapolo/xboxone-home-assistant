@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/OpenXbox/xboxone-home-assistant.svg?branch=master)](https://travis-ci.com/OpenXbox/xboxone-home-assistant)
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/custom-components/hacs)
 
 # Xbox One Smartglass integration for Home Assistant
@@ -8,13 +9,11 @@ use with HASS.io.
 
 ## Custom component
 
-Install via [HACS](https://hacs.xyz/docs/publish/start), component: `Xbox One - smartglass media player`.
-
-For configuration check out: [Custom component info](info.md).
+Install via [HACS](https://hacs.xyz/docs/publish/start) or manually: see [Custom component info](info.md).
 
 ## Hass.io addon
 
-The dockerized version of the [Xbox One Smartglass REST server](https://github.com/OpenXbox/xbox-smartglass-rest-python).
+The dockerized version of the [Xbox One Smartglass REST server](https://github.com/OpenXbox/xbox-smartglass-core-python).
 
 Check out: [Addon README](hassio/README.md).
 

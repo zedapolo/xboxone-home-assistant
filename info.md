@@ -20,6 +20,22 @@ This component replicates many of the features of the Xbox App.  If it can't be 
 - ~~Source Selection: Launch Pinned Apps from within Home Assistant~~
   - ~~Apps only, Games not supported~~ (Feature was removed by Microsoft via console system update)
 
+## Installation of  the component
+
+There are two ways to do the installation, HACS and manually. HACS is preferred because its more failsafe.
+
+### HACS
+
+1. Install HACS [hacs](https://hacs.xyz/docs/installation/prerequisites).
+1. [Add this repo](https://hacs.xyz/docs/navigation/settings) to HACS: `https://github.com/OpenXbox/xboxone-home-assistant`.
+1. Install the component and let Home Assistant restart.
+
+### Manual installation
+
+1. Locate your Home Assistant config directory
+1. Copy the folder `custom_components/xboxone` to your `<HOME ASSISTANT CONFIG DIR>/custom_components/xboxone`.
+1. Restart Home Assistant.
+
 ## Home Assistant Configuration
 
 Follow the below steps to get started.
