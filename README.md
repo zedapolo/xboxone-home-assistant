@@ -7,17 +7,25 @@ This repo includes the custom media player integration and a
 dockerized version of the Xbox One Smartglass REST server to
 use with HASS.io.
 
+## General
+
+The component is based on the python library [xbox-smartglass-core](https://github.com/OpenXbox/xbox-smartglass-core-python)
+by [Team OpenXbox](https://openxbox.org).
+
+Cheers to [Jason Hunter](https://github.com/hunterjm) for developing and maintaining the `Xbox One -> Home Assistant`
+integration.
+
+Home Assistant community thread: [Forum](https://community.home-assistant.io/t/hass-io-add-on-xbox-one/63750).
+
 ## Custom component
 
 * Install via [HACS](https://hacs.xyz/docs/publish/start) or manually: see [Custom component info](info.md).
 
 The component currently still requires an installed/running daemon of **Xbox Smartglass REST server**.
 
-See [xbox-smartglass-core](https://github.com/OpenXbox/xbox-smartglass-core-python) for info about that.
-
 ## Hass.io addon
 
-The dockerized version of the [Xbox One Smartglass REST server](https://github.com/OpenXbox/xbox-smartglass-core-python).
+The hass.io-dockerized version of the required **Xbox Smartglass REST server** service.
 
 Check out: [Addon README](hassio/README.md).
 
