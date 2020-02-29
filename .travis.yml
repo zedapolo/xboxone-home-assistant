@@ -11,7 +11,7 @@ services:
 - docker
 
 before_script:
-- docker login -u $DOCKER_USER -p $DOCKER_PWD
+- docker login -u $DOCKER_USERNAME -p $DOCKER_PWD
 - docker pull homeassistant/amd64-builder:$VERSION_BUILDER
 
 script: |
@@ -21,4 +21,4 @@ script: |
         -v $(pwd):/data:ro \
         homeassistant/amd64-builder:$VERSION_BUILDER \
         --addon --all -t /data/$ADDON \
-        --docker-hub $DOCKER_USER --docker-hub-check
+        --docker-hub $DOCKER_USERNAME --docker-hub-check
