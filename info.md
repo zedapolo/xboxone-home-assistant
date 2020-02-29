@@ -27,7 +27,7 @@ There are two ways to do the installation, HACS and manually. HACS is preferred 
 ### HACS
 
 1. Install HACS [hacs](https://hacs.xyz/docs/installation/prerequisites).
-1. [Add this repo](https://hacs.xyz/docs/navigation/settings) to HACS: `https://github.com/OpenXbox/xboxone-home-assistant`.
+1. In HACS' __Community tab -> Integrations__ search for __Xbox One - smartglass media player__.
 1. Install the component and let Home Assistant restart.
 
 ### Manual installation
