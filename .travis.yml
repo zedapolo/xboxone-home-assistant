@@ -1,23 +1,22 @@
 os: linux
 language: shell
-
 env:
-- VERSION_BUILDER="2.0" ADDON="hassio"
-
+  global:
+  - VERSION_BUILDER="2.0"
+  - ADDON="hassio"
+  - secure: OOass9uxu4ldvvo1VYKKq7/J8Inb62lILqOjL9JKjdPbiMTx6c3qMOw22dD6rOrUdRAUFXtxJNXW7D5Slcper1qyJmE6wxPPch9U8s4OUbaaVSNlfEvwVxyoY1PbNcnngda3xYrNjDWrAsxlNRxkVjjDubNputc6vq3d/tFQ6Z6Q4fmxWGjMRqNDTrikyagk7uvKDPyTR5cx1a2kJ9rk0ErtZ+Hd3j0YUX3bJTD2/+o1xjTkTeQAIPDO8aKL/34znLdpxpJj12kxUOxEjVq+sXvqWOVYncIroyhpaS9q598OphTQ2jVsGYnxmFOIjD+SnscWd5sxKHNb5jih+oiEr5yiQTim1n/PPxKlha06LTZVPaO+KrV6KDp1fJMNkj8UX3OfSUyXtiDOD8mkltT5P2Y+OricKeFLlA6nWvT/1Y9z3HOLn68DwyoA7XaIjG0sVV3MZhX3sU0jU0WLKJ05S8Dg+puWZbxkqrw9nRVm2BEeQVGGcZx34K7Xm//qfQEZ36hvaihjjn0oUwzp3qYTnBR5Y08gV39Sq8/qhzq8gLdQwPnlnNn5oWTeZjbVKKKkUocQoEDOLemdULWbOGvTU/63goedXYVccruiLZwuwaZryE3ndcuSxCzLwKESa5rJRSO9PBYtW/C3uLSqBEgYunaWwpotWeLNfdRvkdBhbB8=
+  - secure: nZl6DiaI8jAMGo/gQZ2xm6P8GAGN2RlDIcjH5Rmwpwwya0VX/XD690rsjTwSUu1kTymxB1RV9hwJsXosluSrhTWN2n8USzgF6V8Yvo4VDEv/66FS440l5A5uUttdg/7G3NndkB8FRSaRpzh/45LaNoSp8UZ9/KQUmhNJ2v1vhNNGBEquqyK8vMJhfAOIIFPjyFKeRWKEGU6z3n0EYwSsEakEXtnPN/1r2CvzRTpZ8AvT/uU6ffIWZ2FRoTZQC+nTBXZADGaUb6j9hBGQNxnqwtCvB1OymclGWuz9yNHtMAqYj+CbncY4UZSmuj+bkcG59w26PbvZzZ7WOc/fYm7PV6sErLShIzINJCmv+lHG3oLxZZlGWdeu999QST8f9RBMzlelEhS256WG7K04mP29+V/vjSNyFECrAqOSeVsIYQWUqlR3LkmoGAYm7ziMYib2dKRfK8DET9KSWBTWB6aP0aZjhwihivGdTTS+SMl8FnAHwNB27WSowcZqmCWUEHFzdN1qA3tAITkyb96EL2B/F9moPRnioNk9TBCQ2KIqPo4EtvCkv6wBPZB2NN/H/RPjiZXgQqY3iMwMHidj9pSjFso6ch1u2ntOcKtSgKjLDFPAQE2XlsPYZY+RGdOQFREF/yYPbVdFIwfrZvlWXU164ic/e6E7t32+19cOYJZFGis=
 services:
-  - docker
-
+- docker
 before_install: |
   if [ -z ${DOCKER_USER} ] || [ -z ${DOCKER_PWD} ]
   then
-    echo "No docker credentials were provided in Travis CI"
+    echo "No docker credentials available"
     exit 1
   fi
-
 before_script:
-  - docker login -u $DOCKER_USER -p $DOCKER_PWD
-  - docker pull homeassistant/amd64-builder:$VERSION_BUILDER
-
+- docker login -u $DOCKER_USER -p $DOCKER_PWD
+- docker pull homeassistant/amd64-builder:$VERSION_BUILDER
 script: |
   docker run --rm --privileged \
         -v ~/.docker:/root/.docker \
