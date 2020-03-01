@@ -17,5 +17,7 @@
   "map": [
     "config:rw"
   ],
+  "options": {},
+  "schema": {},
   "image": "OpenXbox/hassio-{arch}-xboxone"
 }
