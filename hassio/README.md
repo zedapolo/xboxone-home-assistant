@@ -20,7 +20,7 @@ To bridge that gap, the REST server comes into play.
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
-1. [Add our Hass.io add-ons repository](https://github.com/OpenXbox/xboxone-home-assistant) to your Hass.io instance.
+1. [Add](https://www.home-assistant.io/hassio/installing_third_party_addons/) the following URL to your Hass.io instance: `https://github.com/OpenXbox/xboxone-home-assistant`
 2. Install the "Xbox One" add-on.
 3. Start the "Xbox One" add-on.
 
