@@ -23,7 +23,7 @@ comparison to installing any other Hass.io add-on.
 1. [Add](https://www.home-assistant.io/hassio/installing_third_party_addons/) the following URL to your Hass.io instance: `https://github.com/OpenXbox/xboxone-home-assistant`
 2. Install the "Xbox One" add-on.
 3. Start the "Xbox One" add-on.
-
+4. Proceed with installing & setting up the custom component: [Read here](https://github.com/OpenXbox/xboxone-home-assistant/blob/master/info.md).
 
 ## Authors & Contributors
 
