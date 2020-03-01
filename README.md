@@ -1,5 +1,8 @@
 [![Build Status](https://travis-ci.com/OpenXbox/xboxone-home-assistant.svg?branch=master)](https://travis-ci.com/OpenXbox/xboxone-home-assistant)
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/custom-components/hacs)
+[![homeassistant community](https://img.shields.io/badge/support-homeassistant-blue)](https://community.home-assistant.io/t/hass-io-add-on-xbox-one/63750)
+[![Discord](https://img.shields.io/discord/338946086775554048)](https://openxbox.org/discord)
+
 
 # Xbox One Smartglass integration for Home Assistant
 
