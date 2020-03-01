@@ -19,5 +19,5 @@
   ],
   "options": {},
   "schema": {},
-  "image": "OpenXbox/hassio-{arch}-xboxone"
+  "image": "openxbox/hassio-{arch}-xboxone"
 }
