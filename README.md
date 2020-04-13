@@ -10,6 +10,9 @@ This repo includes the custom media player integration and a
 dockerized version of the Xbox One Smartglass REST server to
 use with HASS.io.
 
+## IMPORTANT: You need both, HACS addon and HASS.io ADDDON
+
+
 ## General
 
 The component is based on the python library [xbox-smartglass-core](https://github.com/OpenXbox/xbox-smartglass-core-python)
